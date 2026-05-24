@@ -174,17 +174,6 @@
     z-index: 1;
   }
 
-  .zone-label {
-    font-size: 0.6rem;
-    color: #b0bec5;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.1rem;
-  }
-
-  .word-zone .zone-label {
-    margin-top: 0.2rem;
-  }
-
   .keyboard-hint {
     text-align: center;
     margin-top: 2rem;
@@ -304,14 +293,12 @@
       card.innerHTML = `
         <div class="key-hint">${keyLabel}</div>
         <div class="letter-zone" data-action="letter">
-          <div class="zone-label">BUCHSTABE</div>
           <div class="uppercase">${l.upper}</div>
           <div class="lowercase">${l.lower}</div>
         </div>
         <div class="word-zone" data-action="word">
           <div class="word">${l.word} <span class="speaker">🔊</span></div>
           <div class="translation">${l.trans}</div>
-          <div class="zone-label">WORT</div>
         </div>
       `;
 
